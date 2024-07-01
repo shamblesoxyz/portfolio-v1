@@ -1,0 +1,85 @@
+:root {
+    --primary-font-family: "Dela Gothic One", Helvetica;
+    --secondary-font-family: "DM Sans", Helvetica;
+    --desktop-size-display: 11.6rem;
+    --desktop-size-h1: 5.6rem;
+    --desktop-size-h2: 4.8rem;
+    --desktop-size-h3: 4rem;
+    --mobile-size-display: 6.4rem;
+    --mobile-size-h1: 2.4rem;
+    --mobile-size-h2: 2rem;
+    --mobile-size-h3: 2.8rem;
+    --mobile-size-title: 1.2rem;
+    --common-size-h6: 2rem;
+    --common-size-body: 1.6rem;
+    --line-height-16: 1.6;
+    --line-height-18: 1.8;
+    --border-color: #314F7A
+
+}
+
+.display {
+    font-size: var(--desktop-size-display);
+    /* line-height: var(--line-height-16); */
+    color: transparent;
+    -webkit-text-stroke: 2px var(--themes-primary);
+}
+
+.h1 {
+    font-size: var(--desktop-size-h1);
+    line-height: var(--line-height-16);
+
+}
+
+.h2 {
+    font-size: var(--desktop-size-h2);
+    line-height: var(--line-height-16);
+
+}
+
+.h3 {
+    font-size: var(--desktop-size-h3);
+    line-height: var(--line-height-16);
+
+}
+
+.h6 {
+    font-size: var(--common-size-h6);
+    line-height: var(--line-height-18);
+}
+
+.body {
+    font-family: var(--secondary-font-family);
+    font-size: var(--common-size-body);
+    font-weight: bold;
+    line-height: var(--line-height-16);
+
+}
+
+.title {
+    font-family: var(--secondary-font-family);
+    font-size: var(--common-size-h6);
+    font-weight: bold;
+    line-height: var(--line-height-16);
+}
+
+.subtitle {
+    font-family: var(--secondary-font-family);
+    font-size: var(--mobile-size-title);
+    font-weight: bold;
+    line-height: var(--line-height-16);
+}
+
+[data-themes-mode="dark"] {
+    --themes-surface: rgba(33, 42, 55, 1);
+    --themes-primary: rgba(234, 219, 194, 1);
+    --themes-secondary: rgba(243, 237, 229, 1);
+    --themes-neutral: rgba(192, 202, 222, 1);
+  }
+  
+[data-themes-mode="light"] {
+    --themes-surface: rgba(243, 237, 229, 1);
+    --themes-primary: rgba(120, 58, 23, 1);
+    --themes-secondary: rgba(49, 79, 122, 1);
+    --themes-neutral: rgba(49, 79, 122, 1);
+}

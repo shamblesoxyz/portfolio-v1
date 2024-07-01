@@ -1,0 +1,72 @@
+#main {
+    height: 100vw;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.left-0 {
+    left: 0;
+} 
+
+.right-0 {
+    right: 0;
+} 
+
+.z-1 {
+    z-index: 0;
+} 
+
+.surface {
+    background-color: var(--themes-surface);
+}
+
+.size-48 {
+    height: 48px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.px-120 {
+    padding: 0 12rem;
+}
+
+.py-120 {
+    padding: 12rem 0;
+}
+
+.py-16 {
+    padding: 1.6rem 0;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.border-bot {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.primary {
+    color: var(--themes-primary);
+}
+
