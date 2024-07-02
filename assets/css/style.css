@@ -1,5 +1,9 @@
 #main {
-    height: 100vw;
+
+}
+
+.block {
+    display: block;
 }
 
 .fixed {
@@ -34,6 +38,30 @@
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+/* .flex-1-1 {
+    flex: 1 0;
+} */
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
 .justify-start {
     justify-content: start;
 }
@@ -42,31 +70,152 @@
     justify-content: space-between;
 }
 
+.jusity-center {
+    justify-content: center;
+}
+
+.align-start {
+    align-items: start;
+}
+
+.align-end {
+    align-items: end;
+}
+
 .align-center {
     align-items: center;
 }
 
 .px-120 {
-    padding: 0 12rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+.px-24 {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
 }
 
 .py-120 {
-    padding: 12rem 0;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+.py-60 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.py-24 {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
 }
 
 .py-16 {
     padding: 1.6rem 0;
 }
 
+.mt-120{
+    margin-top: 12rem;
+}
+
+.mb-24 {
+    margin-bottom: 2.4rem;
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.mb-8 {
+    margin-bottom: 1.6rem;
+}
+
+.ml-20 {
+    margin-left: 2rem;
+}
+
+.gap-8 {
+    gap: .8rem;
+}
+
+.gap-64 {
+    gap: 6.4rem;
+}
+
 .gap-40 {
-    gap: 40px;
+    gap: 4rem;
+}
+
+.gap-24 {
+    gap: 2.4rem;
 }
 
 .border-bot {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: .1rem solid var(--border-color);
+}
+
+.border-round {
+    border: .1rem solid var(--border-color);
+    border-radius: .8rem;
 }
 
 .primary {
     color: var(--themes-primary);
 }
 
+.secondary {
+    color: var(--themes-secondary);
+}
+
+.neutral {
+    color: var(--themes-neutral);
+
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.rad-8 {
+    border-radius: .8rem;
+}
+.img-4-3 {
+    padding-top: 75%; /* 4:3 Aspect Ratio (divide 3 by 4 = 0.75) */
+}
+
+.avatar {
+    min-width: 7.8rem;
+    min-height: 7.8rem;
+    border-radius: 100%;
+}
+
+#avatar-01 {
+    background: url('https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/435116190_1794745547688837_695033224121990189_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GwUomeS-8sMQ7kNvgGgtIaC&_nc_ht=scontent.fsgn5-5.fna&oh=00_AYCF4lHnooykr131WqNJOc3mQ30ZGimzOVxbSQ_LhGALSA&oe=668987A7') top center / cover no-repeat;
+} 
+
+#avatar-02 {
+    background: url('https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/371317424_1772892969833831_5758143617223599873_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=vWjPl_W2Tj0Q7kNvgHsu8om&_nc_ht=scontent.fsgn5-9.fna&oh=00_AYC7Xhu_rs6ZBRqt1MayTt8wYx9heSiXp19jnUxQTzCVEg&oe=66898FA3') top center / cover no-repeat;
+}
+
+#project-cover-1 {
+    background: url(../img/04_Spotify_Android.png) no-repeat top center / cover;
+}
+
+.btn-outline {
+    padding: .6rem 2.4rem;
+    color: var(--themes-primary);
+    border: 1px solid var(--themes-primary);
+    border-radius: 10rem;
+}
+
+.btn-filled {
+    padding: .6rem 2.4rem;
+    color: var(--themes-surface);
+    background-color:  var(--themes-primary);
+    border-radius: 10rem;
+}

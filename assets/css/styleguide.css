@@ -18,17 +18,15 @@
 
 }
 
-.display {
+.text-display {
     font-size: var(--desktop-size-display);
-    /* line-height: var(--line-height-16); */
+    line-height: 1;
     color: transparent;
     -webkit-text-stroke: 2px var(--themes-primary);
 }
 
 .h1 {
     font-size: var(--desktop-size-h1);
-    line-height: var(--line-height-16);
-
 }
 
 .h2 {
@@ -48,22 +46,22 @@
     line-height: var(--line-height-18);
 }
 
-.body {
+.text-body {
     font-family: var(--secondary-font-family);
     font-size: var(--common-size-body);
-    font-weight: bold;
-    line-height: var(--line-height-16);
+    font-weight: 600;
+    line-height: var(--line-height-18);
 
 }
 
-.title {
+.text-title {
     font-family: var(--secondary-font-family);
     font-size: var(--common-size-h6);
     font-weight: bold;
     line-height: var(--line-height-16);
 }
 
-.subtitle {
+.text-subtitle {
     font-family: var(--secondary-font-family);
     font-size: var(--mobile-size-title);
     font-weight: bold;
