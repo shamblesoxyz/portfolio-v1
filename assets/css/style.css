@@ -1,13 +1,29 @@
 #main {
-
+    
 }
 
 .block {
     display: block;
 }
 
+.none {
+    display: none;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.pos-rel {
+    position: relative;
+}
+
 .fixed {
     position: fixed;
+}
+
+.relative {
+    position: relative;
 }
 
 .top-0 {
@@ -23,7 +39,7 @@
 } 
 
 .z-1 {
-    z-index: 0;
+    z-index: 1;
 } 
 
 .surface {
@@ -106,6 +122,22 @@
     padding-bottom: 6rem;
 }
 
+.pb-60 {
+    padding-bottom: 6rem;
+}
+
+.pb-120 {
+    padding-bottom: 12rem;
+}
+
+.pt-200 {
+    padding-top: 20rem;
+}
+
+.pt-100 {
+    padding-top: 10rem;
+}
+
 .py-24 {
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
@@ -119,6 +151,10 @@
     margin-top: 12rem;
 }
 
+.mt-200{
+    margin-top: 20rem;
+}
+
 .mb-24 {
     margin-bottom: 2.4rem;
 }
@@ -127,7 +163,7 @@
     margin-bottom: 2rem;
 }
 
-.mb-8 {
+.mb-16 {
     margin-bottom: 1.6rem;
 }
 
@@ -209,7 +245,7 @@
 .btn-outline {
     padding: .6rem 2.4rem;
     color: var(--themes-primary);
-    border: 1px solid var(--themes-primary);
+    border: .16rem solid var(--themes-primary);
     border-radius: 10rem;
 }
 
@@ -218,4 +254,48 @@
     color: var(--themes-surface);
     background-color:  var(--themes-primary);
     border-radius: 10rem;
+}
+
+.btn-filled-icon {
+    padding: .6rem 1.6rem .6rem 2.4rem;
+    color: var(--themes-surface);
+    background-color:  var(--themes-primary);
+    border-radius: 10rem;
+}
+
+.btn-icon-filled {
+    padding: .8rem;
+    color: var(--themes-surface);
+    background-color:  var(--themes-primary);
+    border-radius: 10rem;
+}
+
+mark {
+    color: var(--themes-primary);
+}
+
+svg path {
+    fill: var(--themes-primary);
+}
+
+svg.icon-in-btn path {
+    fill: var(--themes-surface);
+}
+
+#main::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .25;
+    z-index: -1;
+    filter: url(#grainy);
+}
+
+#back-to-top {
+    position: fixed;
+    right: 6rem;
+    bottom: 6rem;
 }

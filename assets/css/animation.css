@@ -1,0 +1,118 @@
+.ani-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -.2rem;
+    height: .3rem;
+    width: 100%;
+    scale: 0 1;
+    background-color: var(--themes-primary);
+    border-radius: 1rem;
+}
+
+.ani-menu a:hover::after {
+    transform-origin: left;
+    animation: scale-x .2s ease-in-out forwards;
+    cursor: pointer;
+
+}
+
+header::after {
+    content: '';
+    position: fixed;
+    top: 8.3rem;
+    height: .3rem;
+    width: 100%;
+    background-color: var(--border-color);
+    scale: 0 1;
+    transform-origin: left;
+    animation: scale-x linear;
+    animation-timeline: scroll();
+}
+
+p, li, a, .avatar {
+    animation: scroll-reveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+}
+
+#back-to-top {
+    animation: back-top-reveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry cover 100%;
+}
+
+#back-to-top:hover {
+    box-shadow: 0 0 0 .4rem var(--themes-primary)
+}
+
+.ani-fade-in {
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
+}
+
+.theme-transition {
+    animation: theme-switch .5s ease;
+}
+
+.btn-filled-icon:hover,
+.btn-icon-filled:hover {
+    animation: transparent-background .2s ease-in-out forwards;
+    cursor: pointer;
+}
+
+@keyframes transparent-background {
+    to {
+        background-color: transparent;
+        color: var(--themes-primary);
+        border: .16rem solid var(--themes-primary);
+    }
+}
+
+@keyframes theme-switch {
+    from { opacity: .5; }
+    to { opacity: 1; }
+  }
+
+@keyframes scale-x {
+    to {scale: 1 1; opacity: 1;}
+}
+
+@keyframes fade-in {
+    from {
+        scale: .8;
+        opacity: .5;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes scroll-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(4rem); 
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes back-top-reveal {
+    from {
+        opacity: 0;
+        scale: .8;
+        transform: translateY(20rem); 
+    }
+    
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0);
+    }
+}

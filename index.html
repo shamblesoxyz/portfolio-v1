@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/styleguide.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body data-themes-mode="dark" class="surface">
@@ -16,19 +18,22 @@
         <header class="fixed top-0 left-0 right-0 z-1 surface py-16 border-bot">
             <div class="flex justify-between align-center px-120">
                 <a href="#">
-                    <img src="./assets/img/logo.png" alt="Logo" class="size-48">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M48 0H25.4118V17.0824C28.1776 17.6438 30.3562 19.8224 30.9176 22.5882H48V0ZM17.0824 25.4118C17.6438 28.1776 19.8224 30.3562 22.5882 30.9176V48H0V25.4118H17.0824ZM36.7059 36.7059L48 25.4118V48H25.4118L36.7059 36.7059ZM11.2941 11.2941L22.5882 0H0V22.5882L11.2941 11.2941Z"/>
+                    </svg>
                 </a>
-                <div class="flex gap-40 justify-start">
-                    <a href="#works" class="h6 primary">Works</a>
-                    <a href="#about" class="h6 primary">About</a>
-                    <a href="#contact" class="h6 primary">Contact</a>
+                <div class="flex gap-40 justify-start align-center ani-menu">
+                    <span id="theme-toggle" class="material-symbols-rounded btn-icon-filled">light_mode</span>
+                    <a href="#about" class="h6 primary pos-rel">About</a>
+                    <a href="#works" class="h6 primary pos-rel">Works</a>
+                    <a href="#contact" class="h6 primary pos-rel">Contact</a>
                 </div>
             </div>
         </header>
 
         <!-- greetings -->
-        <section id="about" class="py-60 px-120">
-            <div class="flex justify-between align-end mt-120">
+        <section class="pt-200 px-120">
+            <div class="flex justify-between align-end">
                 <div class="flex flex-col gap-24">
                     <p class="text-display">Hello.</p>
                     <p class="h3 secondary">I'm Nguyen Trong Phuc</p>
@@ -42,16 +47,16 @@
         </section>
 
         <!-- prefrerences & skills -->
-        <section id="skills" class="py-60 px-120">
+        <section id="about" class="pt-100 px-120">
             <div class="flex gap-24">
                 
                 <!-- prefrerences -->
                 <div class="flex-1">
                     <p class="h3 primary mb-20">Preferences</p>
                     <p class="h6 secondary border-bot mb-20">What can I do?</p>
-                    <p class="text-body neutral mb-8">Create <span class="primary">minimal, clean and beautiful</span> user interface for website & mobile application</p>
-                    <p class="text-body neutral mb-8">Fully pay attention to <span class="primary">typography, color, contrast, layout</span></p>
-                    <p class="text-body neutral mb-8">Implement website using <span class="primary">basic front-end technologies</span> based on the design</p>
+                    <p class="text-body neutral mb-16">Create <span class="primary">minimal, clean, and beautiful</span> user interfaces for websites and mobile applications.</p>
+                    <p class="text-body neutral mb-16">Fully pay attention to <span class="primary">typography, color, contrast, and layout.</span></p>
+                    <p class="text-body neutral mb-16">Implement website using <span class="primary">basic front-end technologies</span> based on the design.</p>
                 </div>
 
                 <!-- skills -->
@@ -65,25 +70,25 @@
                             <div class="flex-col gap-24 text-body">
                                 
                                 <!-- Industry knowledge -->
-                                <div class="flex mb-8">
+                                <div class="flex mb-16">
                                     <p class="flex-1 neutral">Industry knowledge</p>
                                     <p class="flex-1 primary">Design thinking,<br>principles of design</p>
                                 </div>
                                 
                                 <!-- Design techniques -->
-                                <div class="flex mb-8">
+                                <div class="flex mb-16">
                                     <p class="flex-1 neutral">Design techniques</p>
                                     <p class="flex-1 primary">Wireframing,<br>prototyping,<br>mock-up</p>
                                 </div>
     
                                 <!-- Design tool -->
-                                <div class="flex mb-8">
+                                <div class="flex mb-16">
                                     <p class="flex-1 neutral">Design tool</p>
                                     <p class="flex-1 primary">Figma</p>
                                 </div>
     
                                 <!-- Front-end technologies -->
-                                <div class="flex mb-8">
+                                <div class="flex mb-16">
                                     <p class="flex-1 neutral">Front-end technologies</p>
                                     <p class="flex-1 primary">HTML, CSS, JS</p>
                                 </div>
@@ -96,27 +101,27 @@
                             <div class="flex-col gap-24 text-body">
 
                                 <!-- Task management -->
-                                <div class="flex mb-8">
+                                <div class="flex mb-16">
                                     <p class="flex-1 neutral">Task management</p>
                                     <p class="flex-1 primary">Notion, Jira Software</p>
                                 </div>
     
                                 <!-- Time management -->
-                                <div class="flex mb-8">
+                                <div class="flex mb-16">
                                     <p class="flex-1 neutral">Time management</p>
                                     <p class="flex-1 primary">Toggl Track</p>
                                 </div>
     
                                 <!-- Team working -->
-                                <div class="flex mb-8">
+                                <div class="flex mb-16">
                                     <p class="flex-1 neutral">Team working</p>
-                                    <p class="flex-1 primary">-</p>
+                                    <p class="flex-1 primary">100% power</p>
                                 </div>
     
                                 <!-- Willing to learn -->
-                                <div class="flex mb-8">
+                                <div class="flex mb-16">
                                     <p class="flex-1 neutral">Willing to learn</p>
-                                    <p class="flex-1 primary">-</p>
+                                    <p class="flex-1 primary">100% energy</p>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +131,7 @@
         </section>
 
         <!-- works -->
-        <section id="works" class="py-60 px-120">
+        <section id="works" class="pt-100 px-120">
             <div>
                 <p class="h3 primary">Featured Works</p>
                 
@@ -134,7 +139,7 @@
                 <div class="flex flex-col gap-64">
                     <!-- project 01 -->
                     <section>
-                        <div class="flex gap-24 py-16 mb-24 border-bot">
+                        <div class="flex gap-24 py-16 mb-24 border-bot ani-fade-in">
                             <p class="text-display">01.</p>
                             <div class="flex-col">
                                 <p class="h1 secondary">CisnW</p>
@@ -145,15 +150,21 @@
                         <div class="flex gap-24">
                             <!-- project image -->
                             <div class="flex flex-col flex-1 gap-24">
-                                <div id="project-cover-1" class="img-4-3 rad-8">
+                                <div id="project-cover-1" class="img-4-3 rad-8 ani-fade-in">
     
                                 </div>
     
                                 <div class="flex flex-wrap jusity-center gap-8">
                                     <a class="text-body btn-outline">UI/UX Design</a>
-                                    <a class="text-body btn-filled">Android Development</a>
-                                    <a href="https://github.com/ThaiVanHandSome/music_app" class="text-body btn-filled" target="_blank" rel="noopener noreferrer">Github</a>
-                                    <a href="https://www.behance.net/shamblesoxyz" class="text-body btn-filled" target="_blank" rel="noopener noreferrer">Behance</a>
+                                    <a class="text-body btn-outline">Android Development</a>
+                                    <a href="https://github.com/ThaiVanHandSome/music_app" class="flex align-center text-body btn-filled-icon" target="_blank" rel="noopener noreferrer">
+                                        Github
+                                        <span class="material-symbols-rounded icon-in-btn">arrow_outward</span>
+                                    </a>
+                                    <a href="https://www.behance.net/shamblesoxyz" class="flex align-center text-body btn-filled-icon" target="_blank" rel="noopener noreferrer">
+                                        Behance
+                                        <span class="material-symbols-rounded icon-in-btn">arrow_outward</span>
+                                    </a>
                                 </div>
                             </div>
     
@@ -161,47 +172,47 @@
                             <div class="flex flex-col flex-1 gap-24">
     
                                 <!-- Description -->
-                                <p class="text-body secondary">The final project of Mobile Development subject. Main features of this application are listening to music online with basic music control, searching songs and artists, following artists to get real-time notification when they publish new songs, managing user’s playlist and favourite songs, switching themes and language which are already available in CISNW.</p>
+                                <p class="text-body secondary">The final project of Mobile Development subject. Main features of this application are listening to music online with basic music control, searching songs and artists, following artists to get real-time notifications when they publish new songs, managing user’s playlists and favourite songs, switching themes and languages which are already available in CisnW.</p>
                                 <div class="flex-col gap-24 text-body">
                                     
                                     <!-- Time -->
-                                    <div class="flex mb-8 gap-8">
+                                    <div class="flex mb-16 gap-8">
                                         <p class="flex-1 neutral">Time</p>
                                         <p class="flex-3 primary">03/2024 - 05/2024</p>
                                     </div>
         
                                     <!-- Team size -->
-                                    <div class="flex mb-8 gap-8">
+                                    <div class="flex mb-16 gap-8">
                                         <p class="flex-1 neutral">Team size</p>
                                         <p class="flex-3 primary">4</p>
                                     </div>
         
                                     <!-- Position -->
-                                    <div class="flex mb-8 gap-8">
+                                    <div class="flex mb-16 gap-8">
                                         <p class="flex-1 neutral">Position</p>
-                                        <p class="flex-3 primary">UI/UX Designer, Front-end, Back-end Developer</p>
+                                        <p class="flex-3 primary">UI/UX Designer, Front-end, and Back-end Developer.</p>
                                     </div>
         
                                     <!-- Technology used -->
-                                    <div class="flex mb-8 gap-8">
+                                    <div class="flex mb-16 gap-8">
                                         <p class="flex-1 neutral">Technology used</p>
                                         <ul class="flex-3 primary ml-20">
-                                            <li>Built user interfaces by using Material Components for Android (MDC-Android)</li>
-                                            <li>Java and Spring boot for back-end</li>
-                                            <li>MySQL for database</li>
-                                            <li>Cloundinary as a media storage</li>
+                                            <li>Built user interfaces by using Material Components for Android (MDC-Android).</li>
+                                            <li>Java and Spring boot for back-end.</li>
+                                            <li>MySQL for database.</li>
+                                            <li>Cloundinary as a media storage.</li>
                                         </ul>
     
                                     </div>
     
                                     <!-- Responsibility -->
-                                    <div class="flex mb-8 gap-8">
+                                    <div class="flex mb-16 gap-8">
                                         <p class="flex-1 neutral">Responsibility</p>
                                         <ul class="flex-3 primary ml-20">
-                                            <li>Designed user interfaces for 2 application: listener and artist</li>
-                                            <li>Coded both user interfaces and logic processing of CRUD of Playlist, Favourite songs function for the listener application</li>
-                                            <li>Implemented light/dark mode, multi-language (English and Vietnamese) for the listener application</li>
-                                            <li>Used Palette library to custom gradient background based on media image for the listener application</li>
+                                            <li>Designed user interfaces for 2 applications: listener and artist.</li>
+                                            <li>Coded both user interfaces and logic processing of CRUD of Playlist, Favourite songs function for the listener application.</li>
+                                            <li>Implemented light/dark mode, multi-language (English and Vietnamese) for the listener application.</li>
+                                            <li>Used Palette library to custom gradient background based on media image for the listener application.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -211,7 +222,7 @@
 
                     <!-- project 02 -->
                     <section>
-                        <div class="flex gap-24 py-16 mb-24 border-bot">
+                        <div class="flex gap-24 py-16 mb-24 border-bot ani-fade-in">
                             <p class="text-display">02.</p>
                             <div class="flex-col">
                                 <p class="h1 secondary">Spotify Android</p>
@@ -222,13 +233,16 @@
                         <div class="flex gap-24">
                             <!-- project image -->
                             <div class="flex flex-col flex-1 gap-24">
-                                <div id="project-cover-1" class="img-4-3 rad-8">
+                                <div id="project-cover-1" class="img-4-3 rad-8 ani-fade-in">
     
                                 </div>
     
                                 <div class="flex flex-wrap jusity-center gap-8">
                                     <a class="text-body btn-outline">Design Tracing</a>
-                                    <a href="https://www.figma.com/community/file/1268941435443402237" class="text-body btn-filled" target="_blank" rel="noopener noreferrer">Figma Community</a>
+                                    <a href="https://www.figma.com/community/file/1268941435443402237" class="flex align-center text-body btn-filled-icon" target="_blank" rel="noopener noreferrer">
+                                        Figma Community
+                                        <span class="material-symbols-rounded icon-in-btn">arrow_outward</span>
+                                    </a>
                                 </div>
                             </div>
     
@@ -236,11 +250,11 @@
                             <div class="flex flex-col flex-1 gap-24">
     
                                 <!-- Description -->
-                                <p class="text-body secondary">The first resources published in Figma Community. This included 2 version: the first one have some user interfaces of the Spotify’s main features, the second one is actually an updating for the previous version with more user interfaces and available detailedly prototyping.</p>
+                                <p class="text-body secondary">The first resource published in Figma Community. This included 2 versions: the first one have some user interfaces of the Spotify’s main features, the second one is actually an updating for the previous version with more user interfaces and available detailedly prototyping.</p>
                                 <div class="flex-col gap-24 text-body">
                                     
                                     <!-- Time -->
-                                    <div class="flex mb-8 gap-8">
+                                    <div class="flex mb-16 gap-8">
                                         <p class="flex-1 neutral">Time</p>
                                         <ul class="flex-3 primary ml-20">
                                             <li>Version 1: 07/2023, 1 week</li>
@@ -249,13 +263,13 @@
                                     </div>
     
                                     <!-- Responsibility -->
-                                    <div class="flex mb-8 gap-8">
+                                    <div class="flex mb-16 gap-8">
                                         <p class="flex-1 neutral">Responsibility</p>
                                         <ul class="flex-3 primary ml-20">
-                                            <li>Designed user interfaces for 2 application: listener and artist</li>
-                                            <li>Coded both user interfaces and logic processing of CRUD of Playlist, Favourite songs function for the listener application</li>
-                                            <li>Implemented light/dark mode, multi-language (English and Vietnamese) for the listener application</li>
-                                            <li>Used Palette library to custom gradient background based on media image for the listener application</li>
+                                            <li>Designed user interfaces for 2 application: listener and artist.</li>
+                                            <li>Coded both user interfaces and logic processing of CRUD of Playlist, Favourite songs function for the listener application.</li>
+                                            <li>Implemented light/dark mode, multi-language (English and Vietnamese) for the listener application.</li>
+                                            <li>Used Palette library to custom gradient background based on media image for the listener application.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -267,13 +281,13 @@
         </section>
 
         <!-- reviews -->
-        <section id="reviews" class="py-60 px-120">
+        <section id="reviews" class="pt-100 px-120">
             <div class="flex flex-col gap-24">
                 <p class="h3 primary">Motivations</p>
 
                 <div class="flex gap-24">
                     <!-- review 01 -->
-                    <div  class="flex flex-col flex-1 border-round px-24 py-24">
+                    <div  class="flex flex-col flex-1 border-round px-24 py-24 ani-fade-in">
                         <p class="h6 secondary mb-24 text-center">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.</p>
 
                         <!-- friend -->
@@ -281,13 +295,13 @@
                             <div id="avatar-01" class="avatar"></div>
                             <div>
                                 <p class="h6 primary">Nguyen Thai Van</p>
-                                <p class="text-title neutral">HCMC University of Technology and Education</p>
+                                <p class="text-body neutral">HCMC University of Technology and Education</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- review 02 -->
-                    <div  class="flex flex-col flex-1 border-round px-24 py-24">
+                    <div  class="flex flex-col flex-1 border-round px-24 py-24 ani-fade-in">
                         <p class="h6 secondary mb-24 text-center">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.</p>
 
                         <!-- friend -->
@@ -295,7 +309,7 @@
                             <div id="avatar-02" class="avatar"></div>
                             <div>
                                 <p class="h6 primary">Pham Thanh Truong</p>
-                                <p class="text-title neutral">HCMC Posts and Telecommunications Institute of Technology</p>
+                                <p class="text-body neutral">HCMC Posts and Telecommunications Institute of Technology</p>
                             </div>
                         </div>
                     </div>
@@ -304,28 +318,70 @@
         </section>
 
         <!-- contact -->
-        <section id="contact" class="py-60 px-120">
+        <section id="contact" class="pt-100 pb-120 px-120">
             <p class="h3 primary mb-20">Let's contact</p>
-            <div class="flex gap-24">
-                <div class="flex-1">
+            <footer class="flex gap-24">
+                <div class="flex-1 ani-menu">
                     <p class="h6 secondary border-bot mb-20">Socials</p>
-                    <a href="https://www.linkedin.com/in/phuc-nguyen-trong/" class="block text-body primary mb-8" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://www.facebook.com/shamblesoxyz/" class="block text-body primary mb-8" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="mailto:phuc86119@gmail.com" class="block text-body primary mb-8">Email</a>
+                    <a href="https://www.linkedin.com/in/phuc-nguyen-trong/" class="pos-rel text-body primary mb-16" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.facebook.com/shamblesoxyz/" class="pos-rel text-body primary mb-16" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="mailto:phuc86119@gmail.com" class="pos-rel text-body primary mb-16">Email</a>
                 </div>
                 
-                <div class="flex-1">
+                <div class="flex-1 ani-menu">
                     <p class="h6 secondary border-bot mb-20">Resources</p>
-                    <a href="https://github.com/shamblesoxyz" class="block text-body primary mb-8" target="_blank" rel="noopener noreferrer">Github</a>
-                    <a href="https://www.behance.net/shamblesoxyz" class="block text-body primary mb-8" target="_blank" rel="noopener noreferrer">Behance</a>
+                    <a href="https://github.com/shamblesoxyz" class="pos-rel text-body primary mb-16" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a href="https://www.behance.net/shamblesoxyz" class="pos-rel text-body primary mb-16" target="_blank" rel="noopener noreferrer">Behance</a>
                 </div>
 
                 <div class="flex-1">
                     <p class="h2 neutral">©️ 2024 <br>Trong Phuc</p>
                 </div>
-            </div>
+            </footer>
         </section>
 
+        <span id="back-to-top" class="material-symbols-rounded btn-icon-filled">arrow_upward</span>
+
+        <svg class="none">
+            <filter id="grainy">
+                <feTurbulence 
+                    type="turbulence"
+                    baseFrequency="0.8"
+                />
+                
+            </filter>
+        </svg>
+
+        <!-- <button id="theme-toggle">Switch to Dark Theme</button> -->
+
     </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const backToTopButton = document.getElementById('back-to-top');
+        const bodyElement = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            let currentTheme = bodyElement.getAttribute('data-themes-mode');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            // Add animation class before theme change
+            bodyElement.classList.add('theme-transition');
+
+            // Update theme mode
+            bodyElement.setAttribute('data-themes-mode', newTheme);
+
+            // Update theme-toggle text content
+            themeToggle.textContent = currentTheme + '_mode';  // Ensures correct format (e.g., dark_mode)
+
+            // Remove animation class after a delay
+            setTimeout(() => {
+            bodyElement.classList.remove('theme-transition');
+            }, 100);  // Adjust delay based on animation duration
+        });
+
+        backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });  // Smooth scroll to top
+        });
+    </script>
 </body>
 </html>
