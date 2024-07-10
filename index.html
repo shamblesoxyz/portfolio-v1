@@ -154,7 +154,7 @@
     
                                 </div>
     
-                                <div class="flex flex-wrap jusity-center gap-8">
+                                <div class="flex flex-wrap jusity-center gap-12">
                                     <a class="text-body btn-outline">UI/UX Design</a>
                                     <a class="text-body btn-outline">Android Development</a>
                                     <a href="https://github.com/ThaiVanHandSome/music_app" class="flex align-center text-body btn-filled-icon" target="_blank" rel="noopener noreferrer">
@@ -195,7 +195,7 @@
         
                                     <!-- Technology used -->
                                     <div class="flex mb-16 gap-8">
-                                        <p class="flex-1 neutral">Technology used</p>
+                                        <p class="flex-1 neutral">Technologies used</p>
                                         <ul class="flex-3 primary ml-20">
                                             <li>Built user interfaces by using Material Components for Android (MDC-Android).</li>
                                             <li>Java and Spring boot for back-end.</li>
@@ -266,10 +266,8 @@
                                     <div class="flex mb-16 gap-8">
                                         <p class="flex-1 neutral">Responsibility</p>
                                         <ul class="flex-3 primary ml-20">
-                                            <li>Designed user interfaces for 2 application: listener and artist.</li>
-                                            <li>Coded both user interfaces and logic processing of CRUD of Playlist, Favourite songs function for the listener application.</li>
-                                            <li>Implemented light/dark mode, multi-language (English and Vietnamese) for the listener application.</li>
-                                            <li>Used Palette library to custom gradient background based on media image for the listener application.</li>
+                                            <li>Created text styles, color styles, and UI components based on Spotify Android application.</li>
+                                            <li>Made UI design and detailedly prototype for Spotify’s function, such as sign up, log in, search, play song, and manage user’s library.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -285,10 +283,10 @@
             <div class="flex flex-col gap-24">
                 <p class="h3 primary">Motivations</p>
 
-                <div class="flex gap-24">
+                <div class="flex flex-col gap-24">
                     <!-- review 01 -->
                     <div  class="flex flex-col flex-1 border-round px-24 py-24 ani-fade-in">
-                        <p class="h6 secondary mb-24 text-center">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.</p>
+                        <p class="h6 secondary mb-24">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.</p>
 
                         <!-- friend -->
                         <div class="flex gap-24 align-start">
@@ -302,7 +300,7 @@
 
                     <!-- review 02 -->
                     <div  class="flex flex-col flex-1 border-round px-24 py-24 ani-fade-in">
-                        <p class="h6 secondary mb-24 text-center">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.</p>
+                        <p class="h6 secondary mb-24">Phuc is the most meticulous person that I have ever met. He knows how to combine needed things such as colors, shapes,... to create a pretty production. In addition, diligence and good time management are quite correct words to say about him. He always schedules everything which he wants to be done. Honestly, I really admire him because he can spend most of the time of the day doing a thing that he's into it.</p>
 
                         <!-- friend -->
                         <div class="flex gap-24 align-start">
@@ -356,32 +354,6 @@
 
     </div>
 
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const backToTopButton = document.getElementById('back-to-top');
-        const bodyElement = document.body;
-
-        themeToggle.addEventListener('click', () => {
-            let currentTheme = bodyElement.getAttribute('data-themes-mode');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            // Add animation class before theme change
-            bodyElement.classList.add('theme-transition');
-
-            // Update theme mode
-            bodyElement.setAttribute('data-themes-mode', newTheme);
-
-            // Update theme-toggle text content
-            themeToggle.textContent = currentTheme + '_mode';  // Ensures correct format (e.g., dark_mode)
-
-            // Remove animation class after a delay
-            setTimeout(() => {
-            bodyElement.classList.remove('theme-transition');
-            }, 100);  // Adjust delay based on animation duration
-        });
-
-        backToTopButton.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });  // Smooth scroll to top
-        });
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
