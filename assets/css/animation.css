@@ -63,6 +63,13 @@ p, li, a, .avatar {
     cursor: pointer;
 }
 
+.ani-rotate {
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
 @keyframes transparent-background {
     to {
         background-color: transparent;
@@ -114,5 +121,15 @@ p, li, a, .avatar {
         opacity: 1;
         scale: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }

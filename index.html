@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="./assets/css/styleguide.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body data-themes-mode="dark" class="surface">
-    <div id="main">
+    <div id="main" style="overflow-x: clip;">
         <!-- header -->
         <header class="fixed top-0 left-0 right-0 z-1 surface py-16 border-bot">
-            <div class="flex justify-between align-center px-120">
+            <div class="flex justify-between align-center padx">
                 <a href="#">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M48 0H25.4118V17.0824C28.1776 17.6438 30.3562 19.8224 30.9176 22.5882H48V0ZM17.0824 25.4118C17.6438 28.1776 19.8224 30.3562 22.5882 30.9176V48H0V25.4118H17.0824ZM36.7059 36.7059L48 25.4118V48H25.4118L36.7059 36.7059ZM11.2941 11.2941L22.5882 0H0V22.5882L11.2941 11.2941Z"/>
@@ -24,19 +25,19 @@
                 </a>
                 <div class="flex gap-40 justify-start align-center ani-menu">
                     <span id="theme-toggle" class="material-symbols-rounded btn-icon-filled">light_mode</span>
-                    <a href="#about" class="h6 primary pos-rel">About</a>
-                    <a href="#works" class="h6 primary pos-rel">Works</a>
-                    <a href="#contact" class="h6 primary pos-rel">Contact</a>
+                    <a href="#works" class="h6 primary pos-rel menu-item">Works</a>
+                    <a href="#about" class="h6 primary pos-rel menu-item">About</a>
+                    <a href="#contact" class="h6 primary pos-rel menu-item">Contact</a>
                 </div>
             </div>
         </header>
 
         <!-- greetings -->
-        <section class="pt-200 px-120">
-            <div class="flex justify-between align-end">
-                <div class="flex flex-col gap-24">
+        <section class="pt-200 padx">
+            <div class="flex-container gap-24 justify-between align-end">
+                <div class="flex flex-1 flex-col width-100">
                     <p class="text-display">Hello.</p>
-                    <p class="h3 secondary">I'm Nguyen Trong Phuc</p>
+                    <p class="h2 secondary mb--6">I'm Nguyen Trong Phuc</p>
     
                 </div>
                 <div class="flex flex-col align-end text-right">
@@ -47,82 +48,79 @@
         </section>
 
         <!-- prefrerences & skills -->
-        <section id="about" class="pt-100 px-120">
-            <div class="flex gap-24">
-                
-                <!-- prefrerences -->
-                <div class="flex-1">
-                    <p class="h3 primary mb-20">Preferences</p>
-                    <p class="h6 secondary border-bot mb-20">What can I do?</p>
-                    <p class="text-body neutral mb-16">Create <span class="primary">minimal, clean, and beautiful</span> user interfaces for websites and mobile applications.</p>
-                    <p class="text-body neutral mb-16">Fully pay attention to <span class="primary">typography, color, contrast, and layout.</span></p>
-                    <p class="text-body neutral mb-16">Implement website using <span class="primary">basic front-end technologies</span> based on the design.</p>
-                </div>
+        <section id="skills" class="pt-100 padx">
+            <!-- prefrerences -->
+            <div>
+                <p class="h3 primary mb-20">Preferences</p>
+                <p class="h6 secondary border-bot mb-20">What can I do?</p>
+                <p class="text-body neutral mb-16">Create <span class="primary">minimal, clean, and beautiful</span> user interfaces for websites and mobile applications.</p>
+                <p class="text-body neutral mb-16">Fully pay attention to <span class="primary">typography, color, contrast, and layout.</span></p>
+                <p class="text-body neutral mb-16">Implement website using <span class="primary">basic front-end technologies</span> based on the design.</p>
+            </div>
 
-                <!-- skills -->
-                <div class="flex-2">
-                    <p class="h3 primary mb-20">Skills</p>
-                    <div class="flex gap-24">
+            <!-- skills -->
+            <div class="mt-64">
+                <p class="h3 primary mb-20">Skills</p>
+                <div class="flex flex-container gap-24">
 
-                        <!-- Technocal skills -->
-                        <div class="flex-1">
-                            <p class="h6 secondary border-bot mb-20">Technical skills</p>
-                            <div class="flex-col gap-24 text-body">
-                                
-                                <!-- Industry knowledge -->
-                                <div class="flex mb-16">
-                                    <p class="flex-1 neutral">Industry knowledge</p>
-                                    <p class="flex-1 primary">Design thinking,<br>principles of design</p>
-                                </div>
-                                
-                                <!-- Design techniques -->
-                                <div class="flex mb-16">
-                                    <p class="flex-1 neutral">Design techniques</p>
-                                    <p class="flex-1 primary">Wireframing,<br>prototyping,<br>mock-up</p>
-                                </div>
-    
-                                <!-- Design tool -->
-                                <div class="flex mb-16">
-                                    <p class="flex-1 neutral">Design tool</p>
-                                    <p class="flex-1 primary">Figma</p>
-                                </div>
-    
-                                <!-- Front-end technologies -->
-                                <div class="flex mb-16">
-                                    <p class="flex-1 neutral">Front-end technologies</p>
-                                    <p class="flex-1 primary">HTML, CSS, JS</p>
-                                </div>
+                    <!-- Technical skills -->
+                    <div class="flex-1">
+                        <p class="h6 secondary border-bot mb-20">Technical skills</p>
+                        <div class="flex-col gap-24 text-body">
+                            
+                            <!-- Industry knowledge -->
+                            <div class="flex mb-16">
+                                <p class="flex-1 neutral">Industry knowledge</p>
+                                <p class="flex-1 primary">Design thinking,<br>principles of design</p>
+                            </div>
+                            
+                            <!-- Design techniques -->
+                            <div class="flex mb-16">
+                                <p class="flex-1 neutral">Design techniques</p>
+                                <p class="flex-1 primary">Wireframing,<br>prototyping,<br>mock-up</p>
+                            </div>
+
+                            <!-- Design tool -->
+                            <div class="flex mb-16">
+                                <p class="flex-1 neutral">Design tool</p>
+                                <p class="flex-1 primary">Figma</p>
+                            </div>
+
+                            <!-- Front-end technologies -->
+                            <div class="flex mb-16">
+                                <p class="flex-1 neutral">Front-end technologies</p>
+                                <p class="flex-1 primary">HTML, CSS, JS</p>
                             </div>
                         </div>
-    
-                        <!-- Soft skills -->
-                        <div class="flex-1">
-                            <p class="h6 secondary border-bot mb-20">Soft skills</p>
-                            <div class="flex-col gap-24 text-body">
+                    </div>
 
-                                <!-- Task management -->
-                                <div class="flex mb-16">
-                                    <p class="flex-1 neutral">Task management</p>
-                                    <p class="flex-1 primary">Notion, Jira Software</p>
-                                </div>
-    
-                                <!-- Time management -->
-                                <div class="flex mb-16">
-                                    <p class="flex-1 neutral">Time management</p>
-                                    <p class="flex-1 primary">Toggl Track</p>
-                                </div>
-    
-                                <!-- Team working -->
-                                <div class="flex mb-16">
-                                    <p class="flex-1 neutral">Team working</p>
-                                    <p class="flex-1 primary">100% power</p>
-                                </div>
-    
-                                <!-- Willing to learn -->
-                                <div class="flex mb-16">
-                                    <p class="flex-1 neutral">Willing to learn</p>
-                                    <p class="flex-1 primary">100% energy</p>
-                                </div>
+                    <!-- Soft skills -->
+                    <div class="flex-1">
+                        <p class="h6 secondary border-bot mb-20">Soft skills</p>
+                        <div class="flex-col gap-24 text-body">
+
+                            <!-- Task management -->
+                            <div class="flex mb-16">
+                                <p class="flex-1 neutral">Task management</p>
+                                <p class="flex-1 primary">Notion, Jira Software</p>
+                            </div>
+
+                            <!-- Time management -->
+                            <div class="flex mb-16">
+                                <p class="flex-1 neutral">Time management</p>
+                                <p class="flex-1 primary">Toggl Track</p>
+                            </div>
+
+                            <!-- Team working -->
+                            <div class="flex mb-16">
+                                <p class="flex-1 neutral">Team working</p>
+                                <p class="flex-1 primary">100% power</p>
+                            </div>
+
+                            <!-- Willing to learn -->
+                            <div class="flex mb-16">
+                                <p class="flex-1 neutral">Willing to learn</p>
+                                <p class="flex-1 primary">100% energy</p>
                             </div>
                         </div>
                     </div>
@@ -131,7 +129,7 @@
         </section>
 
         <!-- works -->
-        <section id="works" class="pt-100 px-120">
+        <section id="works" class="pt-100 padx">
             <div>
                 <p class="h3 primary">Featured Works</p>
                 
@@ -147,7 +145,7 @@
                             </div>
                         </div>
     
-                        <div class="flex gap-24">
+                        <div class="flex-container gap-24">
                             <!-- project image -->
                             <div class="flex flex-col flex-1 gap-24">
                                 <div id="project-cover-1" class="img-4-3 rad-8 ani-fade-in">
@@ -176,25 +174,25 @@
                                 <div class="flex-col gap-24 text-body">
                                     
                                     <!-- Time -->
-                                    <div class="flex mb-16 gap-8">
+                                    <div class="flex-container mb-16 gap-8">
                                         <p class="flex-1 neutral">Time</p>
                                         <p class="flex-3 primary">03/2024 - 05/2024</p>
                                     </div>
         
                                     <!-- Team size -->
-                                    <div class="flex mb-16 gap-8">
+                                    <div class="flex-container mb-16 gap-8">
                                         <p class="flex-1 neutral">Team size</p>
                                         <p class="flex-3 primary">4</p>
                                     </div>
         
                                     <!-- Position -->
-                                    <div class="flex mb-16 gap-8">
+                                    <div class="flex-container mb-16 gap-8">
                                         <p class="flex-1 neutral">Position</p>
                                         <p class="flex-3 primary">UI/UX Designer, Front-end, and Back-end Developer.</p>
                                     </div>
         
                                     <!-- Technology used -->
-                                    <div class="flex mb-16 gap-8">
+                                    <div class="flex-container mb-16 gap-8">
                                         <p class="flex-1 neutral">Technologies used</p>
                                         <ul class="flex-3 primary ml-20">
                                             <li>Built user interfaces by using Material Components for Android (MDC-Android).</li>
@@ -206,7 +204,7 @@
                                     </div>
     
                                     <!-- Responsibility -->
-                                    <div class="flex mb-16 gap-8">
+                                    <div class="flex-container mb-16 gap-8">
                                         <p class="flex-1 neutral">Responsibility</p>
                                         <ul class="flex-3 primary ml-20">
                                             <li>Designed user interfaces for 2 applications: listener and artist.</li>
@@ -230,14 +228,14 @@
                             </div>
                         </div>
     
-                        <div class="flex gap-24">
+                        <div class="flex-container gap-24">
                             <!-- project image -->
                             <div class="flex flex-col flex-1 gap-24">
                                 <div id="project-cover-1" class="img-4-3 rad-8 ani-fade-in">
     
                                 </div>
     
-                                <div class="flex flex-wrap jusity-center gap-8">
+                                <div class="flex flex-wrap jusity-center gap-12">
                                     <a class="text-body btn-outline">Design Tracing</a>
                                     <a href="https://www.figma.com/community/file/1268941435443402237" class="flex align-center text-body btn-filled-icon" target="_blank" rel="noopener noreferrer">
                                         Figma Community
@@ -254,16 +252,16 @@
                                 <div class="flex-col gap-24 text-body">
                                     
                                     <!-- Time -->
-                                    <div class="flex mb-16 gap-8">
+                                    <div class="flex-container mb-16 gap-8">
                                         <p class="flex-1 neutral">Time</p>
                                         <ul class="flex-3 primary ml-20">
                                             <li>Version 1: 07/2023, 1 week</li>
-                                            <li>Version 2:  05/2024, 2 weeks</li>
+                                            <li>Version 2: 05/2024, 2 weeks</li>
                                         </ul>
                                     </div>
     
                                     <!-- Responsibility -->
-                                    <div class="flex mb-16 gap-8">
+                                    <div class="flex-container mb-16 gap-8">
                                         <p class="flex-1 neutral">Responsibility</p>
                                         <ul class="flex-3 primary ml-20">
                                             <li>Created text styles, color styles, and UI components based on Spotify Android application.</li>
@@ -278,12 +276,31 @@
             </div>
         </section>
 
+        <!-- about -->
+        <section id="about" class="pt-100 padx">
+            <p class="h3 primary mb-20">About me</p>
+            <div class="flex-container gap-24">
+                <div class="flex-1 profile-image ani-fade-in">
+                    <img src="./assets/img/spinning_text.svg" alt="" class="width-100 height-100 left-0 right-0 ml-auto mr-auto ani-rotate">
+                </div>
+                <div class="flex-1">
+                    <p class="text-title neutral mb-24">I’m a Software Engineering student with an interest in <span class="primary">UI/UX Design and Front-end Development.</span></p>
+                    <p class="text-title neutral mb-24">In addition to continuous learning to broaden my knowledge about technology, improve my both technical and soft skills, I have a passion for creating <span class="primary">minimal, clean, and beautiful</span> interfaces for websites and mobile applications.</p>
+                    <p class="text-title neutral mb-48">I’m not afraid to <span class="primary">learn, challenge, and practice</span> because I know that is the exactly way to complete myself and become who I want to become.</p>
+                    <a href="./assets/document/UIUXDesigner_NguyenTrongPhuc_CV.pdf" class="flex align-center text-body btn-filled-icon mt-32" style="max-width: 15.3rem;"" target="_blank" rel="noopener noreferrer">
+                        My resume
+                        <span class="material-symbols-rounded icon-in-btn">arrow_outward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- reviews -->
-        <section id="reviews" class="pt-100 px-120">
+        <section id="reviews" class="pt-100 padx">
             <div class="flex flex-col gap-24">
                 <p class="h3 primary">Motivations</p>
 
-                <div class="flex flex-col gap-24">
+                <div class="flex-container gap-24">
                     <!-- review 01 -->
                     <div  class="flex flex-col flex-1 border-round px-24 py-24 ani-fade-in">
                         <p class="h6 secondary mb-24">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.</p>
@@ -300,7 +317,7 @@
 
                     <!-- review 02 -->
                     <div  class="flex flex-col flex-1 border-round px-24 py-24 ani-fade-in">
-                        <p class="h6 secondary mb-24">Phuc is the most meticulous person that I have ever met. He knows how to combine needed things such as colors, shapes,... to create a pretty production. In addition, diligence and good time management are quite correct words to say about him. He always schedules everything which he wants to be done. Honestly, I really admire him because he can spend most of the time of the day doing a thing that he's into it.</p>
+                        <p class="h6 secondary mb-24">Phuc is the most meticulous person that I have ever met. Diligence and good time management are quite correct words to say about him. Honestly, I really admire him because he can spend most of the time of the day doing a thing that he's into it.</p>
 
                         <!-- friend -->
                         <div class="flex gap-24 align-start">
@@ -316,7 +333,7 @@
         </section>
 
         <!-- contact -->
-        <section id="contact" class="pt-100 pb-120 px-120">
+        <section id="contact" class="pt-100 pb-120 padx">
             <p class="h3 primary mb-20">Let's contact</p>
             <footer class="flex gap-24">
                 <div class="flex-1 ani-menu">
@@ -333,7 +350,7 @@
                 </div>
 
                 <div class="flex-1">
-                    <p class="h2 neutral">©️ 2024 <br>Trong Phuc</p>
+                    <p class="h3 neutral">©️ 2024 Trong Phuc</p>
                 </div>
             </footer>
         </section>
@@ -349,8 +366,6 @@
                 
             </filter>
         </svg>
-
-        <!-- <button id="theme-toggle">Switch to Dark Theme</button> -->
 
     </div>
 
