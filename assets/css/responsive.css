@@ -16,10 +16,34 @@
         padding-left: 1.6rem;
         padding-right: 1.6rem;
     }
-
-    .menu-item {
+    
+    .menu-icon {
+        display: block !important;
+    }
+    
+    
+    
+    .menu-navigation {
+        position: relative;
+    }
+    
+    .menu-navigation:focus-within .navigation {
+        display: flex;
+        position: absolute;
+        top: 6.4rem;
+        left: -40vw;
+        right: -40vw;
+        z-index: 1;
+        padding: 1rem;
+        border-radius: 10rem;
+        backdrop-filter: blur(1rem);
+        border: .01rem solid var(--themes-neutral);
+    }
+    
+    .navigation {
         display: none;
     }
+
     .flex-container {
         flex-direction: column;
     }

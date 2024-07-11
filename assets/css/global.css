@@ -15,3 +15,7 @@ a {
     text-decoration: none;
     display: block;
 }
+
+li {
+    margin-bottom: 1.6rem;
+}

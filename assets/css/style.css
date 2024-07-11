@@ -44,7 +44,7 @@
 
 .z-1 {
     z-index: 1;
-} 
+}
 
 .surface {
     background-color: var(--themes-surface);
@@ -95,7 +95,7 @@
     justify-content: space-between;
 }
 
-.jusity-center {
+.justify-center {
     justify-content: center;
 }
 
@@ -122,6 +122,10 @@
 .padx {
     padding-left: 12rem;
     padding-right: 12rem;
+}
+
+.pad-8 {
+    padding: 0.8rem;
 }
 
 .px-24 {
@@ -382,4 +386,22 @@ svg.icon-in-btn path {
 
 .minw-600 {
     min-width: 60rem;
+}
+
+.menu-icon {
+    display: none !important;
+}
+
+.menu-navigation {
+    font-family: var(--primary-font-family);
+    background-color: transparent;
+    border: none;
+}
+
+/* .navigation {
+    background-color: var(--themes-surface);
+} */
+
+.h-36 {
+    height: 3.6rem;
 }

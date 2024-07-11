@@ -13,7 +13,7 @@
 
 .ani-menu a:hover::after {
     transform-origin: left;
-    animation: scale-x .2s ease-in-out forwards;
+    animation: scale-x .2s ease-in-out both;
     cursor: pointer;
 
 }
@@ -21,7 +21,7 @@
 header::after {
     content: '';
     position: fixed;
-    top: 8.3rem;
+    top: 7.6rem;
     height: .3rem;
     width: 100%;
     background-color: var(--border-color);
@@ -59,7 +59,7 @@ p, li, a, .avatar {
 
 .btn-filled-icon:hover,
 .btn-icon-filled:hover {
-    animation: transparent-background .2s ease-in-out forwards;
+    animation: transparent-background .2s ease-in-out both;
     cursor: pointer;
 }
 
@@ -74,7 +74,7 @@ p, li, a, .avatar {
     to {
         background-color: transparent;
         color: var(--themes-primary);
-        border: .16rem solid var(--themes-primary);
+        box-shadow:inset 0 0 0 0.16rem var(--themes-primary);
     }
 }
 

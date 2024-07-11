@@ -19,16 +19,24 @@
         <header class="fixed top-0 left-0 right-0 z-1 surface py-16 border-bot">
             <div class="flex justify-between align-center padx">
                 <a href="#">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M48 0H25.4118V17.0824C28.1776 17.6438 30.3562 19.8224 30.9176 22.5882H48V0ZM17.0824 25.4118C17.6438 28.1776 19.8224 30.3562 22.5882 30.9176V48H0V25.4118H17.0824ZM36.7059 36.7059L48 25.4118V48H25.4118L36.7059 36.7059ZM11.2941 11.2941L22.5882 0H0V22.5882L11.2941 11.2941Z"/>
                     </svg>
                 </a>
-                <div class="flex gap-40 justify-start align-center ani-menu">
-                    <span id="theme-toggle" class="material-symbols-rounded btn-icon-filled">light_mode</span>
-                    <a href="#works" class="h6 primary pos-rel menu-item">Works</a>
-                    <a href="#about" class="h6 primary pos-rel menu-item">About</a>
-                    <a href="#contact" class="h6 primary pos-rel menu-item">Contact</a>
-                </div>
+
+                <button class="menu-navigation">
+                    <div>
+                        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="3.2rem" viewBox="0 -960 960 960" width="40px" fill="none"><path d="M230.67-160q-29.67 0-50.17-20.5T160-230.67q0-29.66 20.5-50.16 20.5-20.5 50.17-20.5 29.66 0 50.16 20.5 20.5 20.5 20.5 50.16 0 29.67-20.5 50.17T230.67-160ZM480-160q-29.67 0-50.17-20.5t-20.5-50.17q0-29.66 20.5-50.16 20.5-20.5 50.17-20.5t50.17 20.5q20.5 20.5 20.5 50.16 0 29.67-20.5 50.17T480-160Zm249.33 0q-29.66 0-50.16-20.5-20.5-20.5-20.5-50.17 0-29.66 20.5-50.16 20.5-20.5 50.16-20.5 29.67 0 50.17 20.5t20.5 50.16q0 29.67-20.5 50.17T729.33-160ZM230.67-409.33q-29.67 0-50.17-20.5T160-480q0-29.67 20.5-50.17t50.17-20.5q29.66 0 50.16 20.5 20.5 20.5 20.5 50.17t-20.5 50.17q-20.5 20.5-50.16 20.5Zm249.33 0q-29.67 0-50.17-20.5T409.33-480q0-29.67 20.5-50.17t50.17-20.5q29.67 0 50.17 20.5t20.5 50.17q0 29.67-20.5 50.17T480-409.33Zm249.33 0q-29.66 0-50.16-20.5-20.5-20.5-20.5-50.17t20.5-50.17q20.5-20.5 50.16-20.5 29.67 0 50.17 20.5T800-480q0 29.67-20.5 50.17t-50.17 20.5ZM230.67-658.67q-29.67 0-50.17-20.5T160-729.33q0-29.67 20.5-50.17t50.17-20.5q29.66 0 50.16 20.5 20.5 20.5 20.5 50.17 0 29.66-20.5 50.16-20.5 20.5-50.16 20.5Zm249.33 0q-29.67 0-50.17-20.5t-20.5-50.16q0-29.67 20.5-50.17T480-800q29.67 0 50.17 20.5t20.5 50.17q0 29.66-20.5 50.16-20.5 20.5-50.17 20.5Zm249.33 0q-29.66 0-50.16-20.5-20.5-20.5-20.5-50.16 0-29.67 20.5-50.17t50.16-20.5q29.67 0 50.17 20.5t20.5 50.17q0 29.66-20.5 50.16-20.5 20.5-50.17 20.5Z"/></svg>
+                    </div>
+
+                    <div class="flex navigation gap-40 justify-center align-center ani-menu">
+                        <a href="#works" class="h6 primary pos-rel">Works</a>
+                        <a href="#about" class="h6 primary pos-rel">About</a>
+                        <a href="#contact" class="h6 primary pos-rel">Contact</a>
+                    </div>
+                </button>
+
+                <span id="theme-toggle" class="material-symbols-rounded btn-icon-filled">light_mode</span>
             </div>
         </header>
 
@@ -41,7 +49,7 @@
     
                 </div>
                 <div class="flex flex-col align-end text-right">
-                    <p class="text-title primary">Software Engineering Student with an interesting for</p>
+                    <p class="text-title primary">Software Engineering Student with an interest in</p>
                     <p class="h3 secondary">UI/UX Design<br>& Front-end<br>Development</p>
                 </div>
             </div>
@@ -51,7 +59,7 @@
         <section id="skills" class="pt-100 padx">
             <!-- prefrerences -->
             <div>
-                <p class="h3 primary mb-20">Preferences</p>
+                <p class="h3 primary mb-20">• Preferences •</p>
                 <p class="h6 secondary border-bot mb-20">What can I do?</p>
                 <p class="text-body neutral mb-16">Create <span class="primary">minimal, clean, and beautiful</span> user interfaces for websites and mobile applications.</p>
                 <p class="text-body neutral mb-16">Fully pay attention to <span class="primary">typography, color, contrast, and layout.</span></p>
@@ -60,7 +68,7 @@
 
             <!-- skills -->
             <div class="mt-64">
-                <p class="h3 primary mb-20">Skills</p>
+                <p class="h3 primary mb-20">• Skills •</p>
                 <div class="flex flex-container gap-24">
 
                     <!-- Technical skills -->
@@ -71,13 +79,13 @@
                             <!-- Industry knowledge -->
                             <div class="flex mb-16">
                                 <p class="flex-1 neutral">Industry knowledge</p>
-                                <p class="flex-1 primary">Design thinking,<br>principles of design</p>
+                                <p class="flex-1 primary">Design thinking, principles of design</p>
                             </div>
                             
                             <!-- Design techniques -->
                             <div class="flex mb-16">
                                 <p class="flex-1 neutral">Design techniques</p>
-                                <p class="flex-1 primary">Wireframing,<br>prototyping,<br>mock-up</p>
+                                <p class="flex-1 primary">Wireframing, prototyping, mock-up</p>
                             </div>
 
                             <!-- Design tool -->
@@ -89,7 +97,7 @@
                             <!-- Front-end technologies -->
                             <div class="flex mb-16">
                                 <p class="flex-1 neutral">Front-end technologies</p>
-                                <p class="flex-1 primary">HTML, CSS, JS</p>
+                                <p class="flex-1 primary">Basic HTML, CSS, JS</p>
                             </div>
                         </div>
                     </div>
@@ -129,9 +137,9 @@
         </section>
 
         <!-- works -->
-        <section id="works" class="pt-100 padx">
+        <section id="works" name="works" class="pt-100 padx">
             <div>
-                <p class="h3 primary">Featured Works</p>
+                <p class="h3 primary">• Featured Works •</p>
                 
                 <!-- projects -->
                 <div class="flex flex-col gap-64">
@@ -152,7 +160,7 @@
     
                                 </div>
     
-                                <div class="flex flex-wrap jusity-center gap-12">
+                                <div class="flex flex-wrap justify-center gap-12">
                                     <a class="text-body btn-outline">UI/UX Design</a>
                                     <a class="text-body btn-outline">Android Development</a>
                                     <a href="https://github.com/ThaiVanHandSome/music_app" class="flex align-center text-body btn-filled-icon" target="_blank" rel="noopener noreferrer">
@@ -224,7 +232,7 @@
                             <p class="text-display">02.</p>
                             <div class="flex-col">
                                 <p class="h1 secondary">Spotify Android</p>
-                                <p class="h6 secondary">Pixel-by-pixel Spotify user interfaces</p>
+                                <p class="h6 secondary">Pixel-by-pixel user interfaces</p>
                             </div>
                         </div>
     
@@ -235,7 +243,7 @@
     
                                 </div>
     
-                                <div class="flex flex-wrap jusity-center gap-12">
+                                <div class="flex flex-wrap justify-center gap-12">
                                     <a class="text-body btn-outline">Design Tracing</a>
                                     <a href="https://www.figma.com/community/file/1268941435443402237" class="flex align-center text-body btn-filled-icon" target="_blank" rel="noopener noreferrer">
                                         Figma Community
@@ -278,16 +286,16 @@
 
         <!-- about -->
         <section id="about" class="pt-100 padx">
-            <p class="h3 primary mb-20">About me</p>
+            <p class="h3 primary mb-20">• About •</p>
             <div class="flex-container gap-24">
                 <div class="flex-1 profile-image ani-fade-in">
-                    <img src="./assets/img/spinning_text.svg" alt="" class="width-100 height-100 left-0 right-0 ml-auto mr-auto ani-rotate">
+                    <img src="./assets/img/spinning_text.svg" alt="" class="width-100 height-100 absolute ani-rotate">
                 </div>
                 <div class="flex-1">
                     <p class="text-title neutral mb-24">I’m a Software Engineering student with an interest in <span class="primary">UI/UX Design and Front-end Development.</span></p>
                     <p class="text-title neutral mb-24">In addition to continuous learning to broaden my knowledge about technology, improve my both technical and soft skills, I have a passion for creating <span class="primary">minimal, clean, and beautiful</span> interfaces for websites and mobile applications.</p>
                     <p class="text-title neutral mb-48">I’m not afraid to <span class="primary">learn, challenge, and practice</span> because I know that is the exactly way to complete myself and become who I want to become.</p>
-                    <a href="./assets/document/UIUXDesigner_NguyenTrongPhuc_CV.pdf" class="flex align-center text-body btn-filled-icon mt-32" style="max-width: 15.3rem;"" target="_blank" rel="noopener noreferrer">
+                    <a href="./assets/document/UIUXDesigner_NguyenTrongPhuc_CV.pdf" class="flex align-center text-body btn-filled-icon mt-32" style="max-width: 15rem;"" target="_blank" rel="noopener noreferrer">
                         My resume
                         <span class="material-symbols-rounded icon-in-btn">arrow_outward</span>
                     </a>
@@ -298,7 +306,7 @@
         <!-- reviews -->
         <section id="reviews" class="pt-100 padx">
             <div class="flex flex-col gap-24">
-                <p class="h3 primary">Motivations</p>
+                <p class="h3 primary">• Motivations •</p>
 
                 <div class="flex-container gap-24">
                     <!-- review 01 -->
@@ -334,7 +342,7 @@
 
         <!-- contact -->
         <section id="contact" class="pt-100 pb-120 padx">
-            <p class="h3 primary mb-20">Let's contact</p>
+            <p class="h3 primary mb-20">• Let's contact •</p>
             <footer class="flex gap-24">
                 <div class="flex-1 ani-menu">
                     <p class="h6 secondary border-bot mb-20">Socials</p>
@@ -350,7 +358,7 @@
                 </div>
 
                 <div class="flex-1">
-                    <p class="h3 neutral">©️ 2024 Trong Phuc</p>
+                    <p class="h3 neutral">©️ 2024<br>Trong Phuc</p>
                 </div>
             </footer>
         </section>
