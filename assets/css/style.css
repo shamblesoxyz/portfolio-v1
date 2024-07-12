@@ -404,7 +404,7 @@ svg.icon-in-btn path {
 }
 
 #greetings > div::after {
-    content: '[          srcoll for more          ]';
+    content: '[          scroll for more          ]';
     color: var(--themes-secondary);
     letter-spacing: .1rem;
     font-size: 1.2rem;
