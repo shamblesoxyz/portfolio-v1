@@ -151,8 +151,8 @@
     padding-bottom: 12rem;
 }
 
-.pt-200 {
-    padding-top: 20rem;
+.pt-240 {
+    padding-top: 22rem;
 }
 
 .pt-100 {
@@ -398,10 +398,42 @@ svg.icon-in-btn path {
     border: none;
 }
 
-/* .navigation {
-    background-color: var(--themes-surface);
-} */
 
 .h-36 {
     height: 3.6rem;
+}
+
+#greetings > div::after {
+    content: '[          SCROLL FOR MORE          ]';
+    color: var(--themes-secondary);
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#greetings::before {
+    content: 'DESIGN—';
+    font-size: var(--common-size-display);
+    background: linear-gradient(to top, var(--themes-surface), var(--themes-primary));
+    background-clip: text;
+    color: transparent;
+    opacity: 0.1;
+    position: absolute;
+    top: 7vh;
+}
+
+#greetings::after {
+    content: 'CODING';
+    font-size: var(--common-size-display);
+    background: linear-gradient(to top, var(--themes-surface), var(--themes-primary));
+    background-clip: text;
+    color: transparent;
+    opacity: 0.1;
+    right: 12rem;
+    position: absolute;
+    bottom: 10vh;
 }

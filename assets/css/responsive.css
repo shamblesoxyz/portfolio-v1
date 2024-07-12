@@ -1,5 +1,10 @@
 /* Tablet */
 @media (max-width: 1023px) {
+
+    #greetings::after {
+        right: 4.8rem;
+    }
+
     .padx {
         padding-left: 4.8rem;
         padding-right: 4.8rem;
@@ -12,6 +17,20 @@
 
 /* Mobile */
 @media (max-width: 740px) {
+
+    #greetings::before {
+        top: 2vh;
+    }
+
+    #greetings::after {
+        right: 1.6rem;
+        bottom: 16vh
+    }
+
+    #greetings > div::after {
+        bottom: 20vh;
+    }
+
     .padx {
         padding-left: 1.6rem;
         padding-right: 1.6rem;
