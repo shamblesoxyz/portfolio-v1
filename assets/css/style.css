@@ -288,7 +288,6 @@
     min-height: 30rem;
     max-height: 48rem;
     background: url('../img/profile_image.png') center /contain no-repeat;
-    filter: grayscale(50%)
 }
 
 .avatar {
