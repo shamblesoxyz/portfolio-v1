@@ -13,7 +13,11 @@
 
 .ani-menu a:hover::after {
     transform-origin: left;
-    animation: scale-x .2s ease-in-out both;
+    animation-name: scaleX;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    /* animation: scaleX .2s ease-in-out both; */
     cursor: pointer;
 
 }
@@ -27,24 +31,35 @@ header::after {
     background-color: var(--border-color);
     scale: 0 1;
     transform-origin: left;
-    animation: scale-x linear;
+    animation-name: scaleX;
+    animation-timing-function: linear;
+    /* animation: scaleX linear; */
     animation-timeline: scroll();
 }
 
-p, li, a, .avatar {
-    animation: scroll-reveal ease-in-out both;
+p, li, footer a, .avatar {
+    animation-name: scrollReveal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    /* animation: scrollReveal ease-in-out both; */
     animation-timeline: view();
     animation-range: entry 20% cover 30%;
 }
 
 #back-to-top {
-    animation: back-top-reveal ease-in-out both;
+    animation-name: backTopReveal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    /* animation: backTopReveal ease-in-out both; */
     animation-timeline: view();
     animation-range: entry cover 100%;
 }
 
-#greetings::before, #greetings::after, #greetings > div::after {
-    animation: reveal ease-in-out both;
+#greetings::before, #greetings::after, #greetings > div::after, .decoration-item {
+    animation-name: reveal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    /* animation: reveal ease-in-out both; */
     animation-timeline: view();
     animation-range: entry cover 100%;
 }
@@ -54,18 +69,25 @@ p, li, a, .avatar {
 }
 
 .ani-fade-in {
-    animation: fade-in linear both;
+    animation-name: fadeIn;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
     animation-timeline: view();
     animation-range: entry 30% cover 50%;
 }
 
 .theme-transition {
-    animation: theme-switch .5s ease;
+    animation-name: themeSwitch;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+    /* animation: themeSwitch .5s ease; */
 }
 
-.btn-filled-icon:hover,
-.btn-icon-filled:hover {
-    animation: transparent-background .2s ease-in-out both;
+.btn-filled-icon:hover, .btn-icon-filled:hover {
+    animation-name: transparentBackground;
+    animation-timing-function: ease-in-out;
+    animation-duration: .2s;
+    animation-fill-mode: both;
     cursor: pointer;
 }
 
@@ -76,7 +98,7 @@ p, li, a, .avatar {
     animation-iteration-count: infinite;
 }
 
-@keyframes transparent-background {
+@keyframes transparentBackground {
     to {
         background-color: transparent;
         color: var(--themes-primary);
@@ -84,16 +106,16 @@ p, li, a, .avatar {
     }
 }
 
-@keyframes theme-switch {
+@keyframes themeSwitch {
     from { opacity: .5; }
     to { opacity: 1; }
   }
 
-@keyframes scale-x {
+@keyframes scaleX {
     to {scale: 1 1; opacity: 1;}
 }
 
-@keyframes fade-in {
+@keyframes fadeIn {
     from {
         scale: .8;
         opacity: .5;
@@ -104,7 +126,7 @@ p, li, a, .avatar {
     }
 }
 
-@keyframes scroll-reveal {
+@keyframes scrollReveal {
     from {
         opacity: 0;
         transform: translateY(4rem); 
@@ -116,7 +138,7 @@ p, li, a, .avatar {
     }
 }
 
-@keyframes back-top-reveal {
+@keyframes backTopReveal {
     from {
         opacity: 0;
         scale: .8;

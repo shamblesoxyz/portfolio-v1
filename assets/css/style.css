@@ -404,8 +404,10 @@ svg.icon-in-btn path {
 }
 
 #greetings > div::after {
-    content: '[          SCROLL FOR MORE          ]';
+    content: '[          scoll for more          ]';
     color: var(--themes-secondary);
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
     position: absolute;
     bottom: 10vh;
     left: 0;
@@ -436,4 +438,36 @@ svg.icon-in-btn path {
     right: 12rem;
     position: absolute;
     bottom: 10vh;
+}
+
+.filter-blur {
+    filter: blur(.1rem);
+}
+
+.decoration-item {
+    z-index: -1;
+    font-size: var(--desktop-size-display);
+}
+
+.decoration-item.item-1 {
+    top: 50vh;
+}
+
+.decoration-item.item-2 {
+    top: 100vh;
+    right: 0;
+    opacity: .6;
+}
+
+.decoration-item.item-3 {
+    top: 16vh;
+    right: 4vh;
+    font-size: calc(var(--desktop-size-display) - 3rem);
+    opacity: .6;
+}
+
+.decoration-item.item-4 {
+    top: 70vh;
+    right: 20vw;
+    font-size: calc(var(--desktop-size-display) + 3rem);
 }
