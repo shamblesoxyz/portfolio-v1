@@ -403,7 +403,7 @@ svg.icon-in-btn path {
 }
 
 #greetings > div::after {
-    content: '[          scroll for more          ]';
+    content: '[ scroll for more ]';
     color: var(--themes-secondary);
     letter-spacing: .1rem;
     font-size: 1.2rem;
@@ -469,4 +469,13 @@ svg.icon-in-btn path {
     top: 70vh;
     right: 20vw;
     font-size: calc(var(--desktop-size-display) + 3rem);
+}
+
+.tag {
+    color: var(--themes-primary);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: .4rem 1.2rem;
+    border: 0.1rem solid var(--themes-primary);
+    border-radius: 10rem;
 }

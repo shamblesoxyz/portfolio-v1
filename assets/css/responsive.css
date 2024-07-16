@@ -92,4 +92,9 @@
     .h6 {
         font-size: var(--mobile-size-h6);
     }
+
+    .avatar {
+        min-width: 6rem;
+        min-height: 6rem;
+    }
 }
