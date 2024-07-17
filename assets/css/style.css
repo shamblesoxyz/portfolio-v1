@@ -305,6 +305,10 @@
 }
 
 #project-cover-1 {
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/82af3d203429971.66973350167fd.png') no-repeat top right / cover;
+}
+
+#project-cover-2 {
     background: url('https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/f6e56e149b225b9c8c83fedb25ba233c7832afbc') no-repeat top right / cover;
 }
 
