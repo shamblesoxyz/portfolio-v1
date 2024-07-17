@@ -305,7 +305,7 @@
 }
 
 #project-cover-1 {
-    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/82af3d203429971.66973350167fd.png') no-repeat top right / cover;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/850240203429971.669764d9badfd.png') no-repeat top right / cover;
 }
 
 #project-cover-2 {
@@ -331,6 +331,7 @@
     color: var(--themes-surface);
     background-color:  var(--themes-primary);
     border-radius: 10rem;
+    font-weight: 700;
 }
 
 .btn-icon-filled {
