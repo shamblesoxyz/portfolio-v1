@@ -305,14 +305,18 @@
 }
 
 #project-cover-1 {
-    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/f60015204670289.66acca839cc7a.png') no-repeat top center / cover;
+    background: url('https://ui.live/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fui8-ui-live.appspot.com%2Fo%2Ffreebies%252Fimage-1746362180760.png%3Falt%3Dmedia%26token%3D055ea63c-e259-4f48-9065-86e98e1aa2af&w=2048&q=75') no-repeat top center / cover;
 }
 
 #project-cover-2 {
-    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/850240203429971.669764d9badfd.png') no-repeat top right / cover;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/f60015204670289.66acca839cc7a.png') no-repeat top center / cover;
 }
 
 #project-cover-3 {
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/850240203429971.669764d9badfd.png') no-repeat top right / cover;
+}
+
+#project-cover-4 {
     background: url('https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/f6e56e149b225b9c8c83fedb25ba233c7832afbc') no-repeat top right / cover;
 }
 
